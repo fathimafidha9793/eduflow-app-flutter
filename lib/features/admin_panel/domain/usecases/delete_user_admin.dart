@@ -1,0 +1,26 @@
+import 'package:dartz/dartz.dart';
+import 'package:equatable/equatable.dart';
+import 'package:eduflow/core/error/failures.dart';
+import 'package:eduflow/core/usecase/usecase.dart';
+
+import '../repositories/admin_repository.dart';
+
+class DeleteUserAdminUseCase extends UseCase<void, DeleteUserParams> {
+  final AdminRepository repository;
+
+  DeleteUserAdminUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, void>> call(DeleteUserParams params) {
+    return repository.deleteUser(params.userId);
+  }
+}
+
+class DeleteUserParams extends Equatable {
+  final String userId;
+
+  const DeleteUserParams({required this.userId});
+
+  @override
+  List<Object?> get props => [userId];
+}

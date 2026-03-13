@@ -2,15 +2,15 @@
 
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=FFA000)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-**Eduflow** is a next-generation education productivity application built with Flutter. It combines traditional study planning with modern AI capabilities to help students maximize their learning potential. Designed with Clean Architecture and powered by Firebase, it offers a robust, scalable, and beautiful experience.
+**Eduflow** is a premium education productivity application built with Flutter. It streamlines study planning, task management, and academic performance tracking into a single, cohesive experience. Designed with Clean Architecture and powered by Firebase, it offers a robust, scalable, and visually stunning platform for modern students.
 
 ## 📋 Table of Contents
 - [✨ Key Features](#-key-features)
-- [📱 Screenshots](#-screenshots)
-- [🏗️ Architecture](#-technical-architecture)
+- [📱 Screenshots](#-screenshots-gallery)
+- [🏗️ Technical Architecture](#-technical-architecture)
 - [📂 Folder Structure](#-folder-structure)
 - [🚀 Getting Started](#-getting-started)
 - [🤝 Contributing](#-contributing)
@@ -20,117 +20,85 @@
 
 ## 🛡️ Security
 
-This project takes security seriously.
-- **API Keys**: All sensitive API keys (e.g., Gemini AI) are stored in secure, git-ignored configuration files.
-- **Authentication**: Powered by Firebase Auth for industry-standard security.
-- **Data Privacy**: All user data is stored securely in Firestore with user-scoped access rules.
+- **Safe Configuration**: Sensitive infrastructure details are managed via secure configuration files.
+- **Identity Protection**: Industry-standard authentication powered by Firebase Auth.
+- **Scoped Data**: User data is isolated and secured using granular Cloud Firestore security rules.
 
 ---
 
 ## 📱 Screenshots Gallery
 
-Explore the application interface:
+Explore the intuitive interface of Eduflow:
 
-| **Home & Dashboard** | **Profile & Settings** | **Subjects Management** |
+| **Home Dashboard** | **Profile & Stats** | **Subjects** |
 |:---:|:---:|:---:|
 | <img src="assets/images/screenshots/home_page.jpg" width="250" /> | <img src="assets/images/screenshots/profile.jpg" width="250" /> | <img src="assets/images/screenshots/subject_page.jpg" width="250" /> |
 
-| **Analytics Overview** | **Performance Trends** | **Study Focus** |
+| **Analytics** | **Performance Trends** | **Focus Session** |
 |:---:|:---:|:---:|
 | <img src="assets/images/screenshots/analytics.jpg" width="250" /> | <img src="assets/images/screenshots/analytics_fl_chart.jpg" width="250" /> | <img src="assets/images/screenshots/session_page.jpg" width="250" /> |
 
-| **Knowledge Hub (AI)** | **Gamification** | **Task Management** |
+| **Gamification** | **Task Management** | **Notifications** |
 |:---:|:---:|:---:|
-| <img src="assets/images/screenshots/knowledge.jpg" width="250" /> | <img src="assets/images/screenshots/analytics_game.jpg" width="250" /> | <img src="assets/images/screenshots/task_page.jpg" width="250" /> |
+| <img src="assets/images/screenshots/analytics_game.jpg" width="250" /> | <img src="assets/images/screenshots/task_page.jpg" width="250" /> | <img src="assets/images/screenshots/task_page_notification.jpg" width="250" /> |
 
-| **Task Notifications** | **Resource Library** | **Reminders** |
-|:---:|:---:|:---:|
-| <img src="assets/images/screenshots/task_page_notification.jpg" width="250" /> | <img src="assets/images/screenshots/resources.jpg" width="250" /> | <img src="assets/images/screenshots/reminders.jpg" width="250" /> |
+| **Resource Library** | **Study Reminders** |
+|:---:|:---:|
+| <img src="assets/images/screenshots/resources.jpg" width="250" /> | <img src="assets/images/screenshots/reminders.jpg" width="250" /> |
 
 ---
 
-## ✨ Comprehensive Feature List
+## ✨ Key Features
 
-### 🔐 1. Advanced Authentication & User Management
-*   **Sign Up & Login**: Robust email/password authentication via Firebase Auth.
-*   **Forgot Password**: Automated email recovery flow.
-*   **Splash & Onboarding**: Engaging introductory experience for first-time users.
+### 🔐 1. Secure Authentication
+*   **Complete Flow**: Email/Password login with secure sign-up and password recovery.
+*   **Onboarding**: Interactive splash and onboarding screens for new users.
 
-### 📚 2. Subject & Curriculum Management
-*   **Color-Coded Subjects**: visuals distinct subjects for easy recognition.
-*   **Progress Tracking**: Monitor task completion rates per subject.
-*   **Goal Setting**: Define study goals for each course.
+### 📚 2. Subject & Curriculum Control
+*   **Visual Organization**: Color-coded subjects for immediate recognition.
+*   **Progress Insights**: Real-time task completion tracking per subject.
 
-### ✅ 3. Task & To-Do System
-*   **CRUD Operations**: Create, Read, Update, and Delete study tasks.
-*   **Priority Levels**: Low, Medium, High priority categorization.
-*   **Status Workflow**: Move tasks from "To Do" -> "In Progress" -> "Done".
-*   **Deadlines**: Set due dates and receive timely notifications.
+### ✅ 3. Dynamic Task Management
+*   **Full Lifecycle**: Create, update, and manage study tasks with ease.
+*   **Prioritization**: Categorize work by High, Medium, or Low urgency.
+*   **Notifications**: Smart alerts for upcoming deadlines.
 
-### ⏱️ 4. Focus Timer & Study Planner
-*   **Session Timer**: Dedicated timer for focused study blocks (Pomodoro style).
-*   **Session Logging**: Automatically records study duration and associates it with subjects.
-*   **Visual Feedback**: Beautiful circular progress indicators during sessions.
+### ⏱️ 4. Immersive Focus Timer
+*   **Pomodoro Method**: Dedicated focus blocks to maximize productivity.
+*   **Auto-Logging**: Seamlessly records study time against specific subjects.
 
-### 🤖 5. Knowledge Hub (AI-Powered)
-*   **AI Companion**: Built-in chat interface powered by **Gemini AI**.
-*   **Smart Assistance**: Ask questions, get summaries, and generate study tips.
-*   **Contextual Help**: AI understands the context of your subjects and tasks.
+### 📊 5. Advanced Analytics
+*   **Heatmaps**: GitHub-style activity tracking for study consistency.
+*   **Interactive Charts**: Deep dives into your time distribution via FL Charts.
+*   **Gamification Engine**: Earn XP, level up, and unlock achievements as you study.
 
-### 📊 6. Analytics & Insights
-*   **Consistency Heatmap**: GitHub-style activity graph to visualize daily study streaks.
-*   **FL Charts**: Interactive bar and pie charts showing time distribution.
-*   **Performance Gauges**: Real-time metrics on task completion efficiency.
-*   **Gamification**: Earn XP, level up, and unlock achievements based on study habits.
+### 📂 6. Integrated Resource Library
+*   **Document Vault**: Securely store PDFs and reference materials in the cloud.
+*   **Smart Linking**: Resources are automatically contextualized with their respective subjects.
 
-### 📂 7. Resource Library
-*   **File Management**: Upload and store PDF notes, images, and reference materials.
-*   **Categorization**: Resources automatically linked to specific subjects.
-*   **Cloud Storage**: Securely stored using Firebase Storage.
-
-### 🔔 8. Reminders & Alarms
-*   **Custom Alarms**: Set dedicated alarms for study sessions.
-*   **Push Notifications**: Reminders for upcoming task deadlines.
-*   **Alarm Ringing Screen**: Full-screen wake-up interface for study alarms.
-
-### ⚙️ 9. Admin Panel & Settings
-*   **User Management**: Admin tools to view user statistics (for app administrators).
-*   **Dark Mode**: First-class support for system-wide dark/light themes.
-*   **Feedback System**: Direct channel to send app feedback.
+### 🔔 7. Precision Reminders
+*   **Custom Alarms**: Dedicated study session alarms with a full-screen ringing interface.
+*   **Sync**: Persistent reminders to keep your study schedule on track.
 
 ---
 
 ## 🏗️ Technical Architecture
 
-This project follows **Clean Architecture** principles to ensure scalability, testability, and maintainability.
+Eduflow is engineered using **Clean Architecture** to ensure long-term maintainability and performance.
 
-### Layers
-1.  **Presentation Layer**:
-    *   **Pages & Widgets**: UI components built with Flutter.
-    *   **State Management**: **BLoC (Business Logic Component)** pattern for separating logic from UI.
-2.  **Domain Layer**:
-    *   **Entities**: Pure Dart classes representing business objects.
-    *   **Use Cases**: Encapsulate specific business rules (e.g., `LoginUser`, `GetTasks`).
-    *   **Repositories (Interfaces)**: Abstract contracts for data operations.
-3.  **Data Layer**:
-    *   **Repositories (Implementations)**: Concrete logic to fetch data.
-    *   **Data Sources**: Direct connections to Firebase, Local Storage, or APIs.
-    *   **Models**: Data Transfer Objects (DTOs) with JSON serialization.
+### Architecture Layers
+1.  **Presentation**: UI components built with BLoC state management for reactive updates.
+2.  **Domain**: Pure business logic and entity definitions, independent of external frameworks.
+3.  **Data**: Repository implementations handling Firebase interactions and local caching.
 
-### 🛠️ Tech Stack & Dependencies
-
-*   **Core**: [Flutter](https://flutter.dev/) (SDK 3.24+), Dart.
-*   **State Management**: `flutter_bloc`, `equatable`.
-*   **Dependency Injection**: `get_it`, `injectable`.
-*   **Routing**: `go_router` for declarative navigation.
-*   **Backend (BaaS)**:
-    *   `firebase_auth` (Authentication)
-    *   `cloud_firestore` (NoSQL Database)
-    *   `firebase_storage` (File Storage)
-*   **Local Storage**: `shared_preferences`, `flutter_secure_storage`.
-*   **UI  & Animations**: `flutter_animate`, `flutter_screenutil`, `google_fonts`, `fl_chart`.
-*   **Utilities**: `intl` (Formatting), `uuid` (Unique IDs), `logger` (Debugging).
-*   **AI**: `google_generative_ai` (Gemini API).
+### 🛠️ Core Tech Stack
+*   **Framework**: Flutter SDK (3.24+)
+*   **State Management**: `flutter_bloc`, `equatable`
+*   **Dependency Injection**: `get_it`, `injectable`
+*   **Navigation**: `go_router`
+*   **Backend**: Firebase (Auth, Firestore, Storage)
+*   **Local Storage**: Hive, Shared Preferences
+*   **Visualization**: `fl_chart`, `flutter_heatmap_calendar`
 
 ---
 
@@ -139,20 +107,16 @@ This project follows **Clean Architecture** principles to ensure scalability, te
 ```
 lib/
 ├── config/              # App configuration (Routes, Theme)
-├── core/                # Shared utilities, Constants, Base classes
-│   ├── errors/          # Failure handling
-│   ├── usecase/         # Base usecase params
-│   └── utils/           # Logger, validators
+├── core/                # Shared utilities and base classes
 ├── di/                  # Dependency Injection setup
-├── features/            # Feature-based modules
-│   ├── auth/            # Authentication (Login, Register)
-│   ├── dashboard/       # Home screen logic
-│   ├── tasks/           # Task management
-│   ├── subjects/        # Subject management
-│   ├── analytics/       # Stats and Charts
-│   ├── knowledge/       # AI Hub
+├── features/            # Modular feature blocks
+│   ├── auth/            # Security & Session management
+│   ├── dashboard/       # Main navigation hub
+│   ├── tasks/           # Workflows & Deadlines
+│   ├── subjects/        # Academic organization
+│   ├── analytics/       # Data visualization
 │   └── ...
-└── main.dart            # Application Entry Point
+└── main.dart            # Entry point
 ```
 
 ---
@@ -160,16 +124,15 @@ lib/
 ## 🚀 Getting Started
 
 ### Prerequisites
-*   Flutter SDK installed.
-*   Dart SDK installed.
-*   Firebase Project set up.
+- Flutter SDK installed
+- Firebase CLI configured
 
 ### Installation
 
-1.  **Clone the Repository**
+1.  **Clone & Navigate**
     ```bash
-    git clone https://github.com/ansar7787/smart-study-plan.git
-    cd smart-study-plan
+    git clone https://github.com/fathimafidha9793/eduflow-app-flutter.git
+    cd eduflow-app-flutter
     ```
 
 2.  **Install Dependencies**
@@ -177,11 +140,11 @@ lib/
     flutter pub get
     ```
 
-3.  **Configure Firebase**
-    *   Add `google-services.json` to `android/app/`.
-    *   Add `GoogleService-Info.plist` to `ios/Runner/`.
+3.  **Authentication Setup**
+    - Place `google-services.json` in `android/app/`.
+    - Place `GoogleService-Info.plist` in `ios/Runner/`.
 
-4.  **Run the App**
+4.  **Launch**
     ```bash
     flutter run
     ```
@@ -190,22 +153,12 @@ lib/
 
 ## 🤝 Contributing
 
-Contributions are welcome!
-1.  Fork the Project.
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the Branch (`git push origin feature/AmazingFeature`).
-5.  Open a Pull Request.
+We welcome contributions to Eduflow! Feel free to fork the repository, create a feature branch, and submit a pull request.
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License.
 
 ---
-
-**Developed with ❤️ by Ansar**
-#   e d u f l o w - a p p - f l u t t e r  
- #   e d u f l o w - a p p - f l u t t e r  
- #   e d u f l o w - a p p - f l u t t e r  
- #   e d u f l o w - a p p - f l u t t e r  
- 
+**Crafted with excellence for students everywhere.**
+#   e d u f l o w - a p p - f l u t t e r

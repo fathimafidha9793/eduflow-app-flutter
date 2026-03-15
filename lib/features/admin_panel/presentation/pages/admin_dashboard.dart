@@ -13,8 +13,8 @@ class AdminDashboard extends StatelessWidget {
   const AdminDashboard({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return BlocProvider<AdminDashboardBloc>(
+  Widget build(BuildContext context)
+   { return BlocProvider<AdminDashboardBloc>(
       create: (_) =>
           getIt<AdminDashboardBloc>()..add(const LoadAdminDashboardEvent()),
       child: const _AdminDashboardView(),

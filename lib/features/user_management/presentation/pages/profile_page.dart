@@ -75,7 +75,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Future<void> _sendFeedback() async {
     final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
-      path: 'muhammedansar7787@gmail.com',
+      path: 'fathimafidha9793@gmail.com',
       query: _encodeQueryParameters(<String, String>{
         'subject': 'Eduflow Feedback',
       }),
